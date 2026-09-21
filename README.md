@@ -11,7 +11,7 @@ Modern, snabb och responsiv webbplats för restaurangen **Laffet Shawarma** i J�
 - **Telefon:** 036-12 24 20 / Mobil: 0703-99 47 80
 - **Öppettider:** Alla dagar 11:00 – 22:00
 - **Instagram:** [@laffet.shawarma](https://www.instagram.com/laffet.shawarma)
-- **Onlinebeställning:** [Foodora](https://www.foodora.se/restaurant/v8d1/laffet-shawarma)
+- **Onlinebeställning:** [Foodora](https://www.foodora.se/restaurant/qx50/laffet-shawarma)
 - **Google Maps:** [Hitta till Laffet Shawarma](https://maps.app.goo.gl/pZaLqHDUw5BnKTU28)
 
 ---
