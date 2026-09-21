@@ -1,2 +1,3 @@
-# laffet-shawarma
-Laffet Shawarma - Delicious Syrian Bite i Jönköping. Officiell hemsida.
+# Laffet Shawarma – Officiell Hemsida
+
+Modern, snabb och responsiv webbplats för restaurangen Laffet Shawarma i Jönköping.
