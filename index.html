@@ -18,8 +18,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Cabinet+Grotesk:wght@700;800;900&display=swap" rel="stylesheet">
   
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  
   <!-- Styles -->
-  <link rel="stylesheet" href="styles.css?v=3.0">
+  <link rel="stylesheet" href="styles.css?v=4.0">
 </head>
 <body>
 
@@ -44,9 +47,7 @@
   <header class="site-header" id="header">
     <div class="container nav-wrapper">
       <a href="#hero" class="brand-logo" aria-label="Laffet Shawarma Hem">
-        <div class="logo-badge">
-          <span class="logo-spit">🍢</span>
-        </div>
+        <img src="logo.svg" alt="Laffet Shawarma Officiell Logotyp" class="brand-logo-img">
         <div class="logo-text-group">
           <span class="brand-name">LAFFET</span>
           <span class="brand-sub">SHAWARMA</span>
@@ -121,15 +122,30 @@
       <div class="hero-backdrop-glow"></div>
       <div class="container hero-container">
         <div class="hero-text-content">
-          <div class="hero-badge">
-            <span class="badge-icon">✨</span>
-            <span>Autentisk Syrisk Matkultur</span>
+          <!-- Official Storefront Fascia Banner (Matching Physical Signboard) -->
+          <div class="storefront-fascia-banner" aria-label="Laffet Shawarma Butiksskylt">
+            <div class="storefront-fascia-inner">
+              <div class="fascia-logo-side">
+                <img src="logo.svg" alt="Laffet Shawarma Officiell Logotyp" class="fascia-logo-img">
+              </div>
+              <div class="fascia-sign-side">
+                <div class="fascia-brand-laffet">LAFFET</div>
+                <div class="fascia-stripe-shawarma">
+                  <span class="fascia-text-shawarma">SHAWARMA</span>
+                </div>
+                <div class="fascia-sub-row">
+                  <span class="fascia-sub-1">— Shawarma • Broasted • Kyckling —</span>
+                  <span class="fascia-sub-2">Crispy Chicken • Fajita • Philadelphia • Falafel</span>
+                </div>
+              </div>
+            </div>
           </div>
+
           <h1 class="hero-title">
             Smaken av äkta syrisk <span class="text-gradient">shawarma</span> i Jönköping
           </h1>
           <p class="hero-description">
-            Välkommen till <strong>Laffet Shawarma</strong>. Vi marinerar köttet efter traditionella recept, grillar på roterande spett och rostar tunnbrödet krispigt med vår hemlagade vitlökssås (toum) och granatäppelsirap.
+            Välkommen till <strong>Laffet Shawarma</strong> på Östra Storgatan 116 A. Vi marinerar köttet efter traditionella recept, grillar på roterande spett och serverar krispigt tunnbröd med hemgjord vitlökskräm (toum) och granatäppelsirap.
           </p>
           
           <div class="hero-cta-group">
@@ -142,7 +158,7 @@
               Ring & Beställ
             </a>
             <a href="#catering" class="btn btn-catering-hero btn-lg">
-              <span>🍱</span> Beställ Catering
+              <span>🍱</span> Catering & Sällskap
             </a>
           </div>
 
@@ -154,7 +170,7 @@
             </div>
             <div class="feature-divider"></div>
             <div class="hero-feature-item">
-              <span class="feature-num">34+</span>
+              <span class="feature-num">34</span>
               <span class="feature-lbl">Rätter på Menyn</span>
             </div>
             <div class="feature-divider"></div>
@@ -183,12 +199,12 @@
               <span class="reviewer-meta">Verifierad gäst • Google Maps</span>
             </div>
 
-            <!-- Authentic Stamp -->
-            <div class="floating-stamp">
-              <span class="stamp-icon">🥙</span>
-              <div class="stamp-text">
-                <strong>Delicious</strong>
-                <small>Syrian Bite</small>
+            <!-- Official Storefront Photo Card -->
+            <div class="floating-storefront-badge">
+              <img src="storefront.png" alt="Laffet Shawarma butiksskylt och restaurang i Jönköping" class="storefront-thumb">
+              <div class="storefront-thumb-info">
+                <strong>Laffet Shawarma</strong>
+                <span>📍 Östra Storgatan 116 A</span>
               </div>
             </div>
           </div>
@@ -242,6 +258,15 @@
               <div class="experience-card">
                 <span class="exp-title">Äkta Hantverk</span>
                 <span class="exp-desc">Med rötter i traditionella syriska recept</span>
+              </div>
+            </div>
+
+            <!-- Authentic Storefront Photo Card -->
+            <div class="storefront-real-card">
+              <img src="storefront.png" alt="Laffet Shawarma officiella butiksskylt och restaurang i Jönköping" class="storefront-real-img">
+              <div class="storefront-real-caption">
+                <strong>📍 Östra Storgatan 116 A, Jönköping</strong>
+                <span>Vår officiella fasad & butik</span>
               </div>
             </div>
           </div>
@@ -595,7 +620,7 @@
     <div class="container footer-main">
       <div class="footer-col brand-col">
         <div class="brand-logo footer-logo">
-          <div class="logo-badge"><span class="logo-spit">🍢</span></div>
+          <img src="logo.svg" alt="Laffet Shawarma Officiell Logotyp" class="brand-logo-img">
           <div class="logo-text-group">
             <span class="brand-name">LAFFET</span>
             <span class="brand-sub">SHAWARMA</span>

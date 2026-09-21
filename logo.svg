@@ -1,0 +1,40 @@
+<svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg" class="laffet-official-logo">
+  <!-- Outer Dark Circle with Storefront Orange Border -->
+  <circle cx="120" cy="120" r="114" fill="#121214" stroke="#f97316" stroke-width="6"/>
+  <circle cx="120" cy="120" r="106" fill="none" stroke="#f97316" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.35"/>
+
+  <!-- Side Curved Accents -->
+  <path d="M22,110 Q14,120 22,130" stroke="#f97316" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M218,110 Q226,120 218,130" stroke="#f97316" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+  <!-- Stylized Shawarma Meat Cone / Spit -->
+  <g transform="translate(120, 50)">
+    <!-- Top spit handle -->
+    <rect x="-2.5" y="-18" width="5" height="12" rx="2" fill="#f97316"/>
+    <!-- Top meat crown -->
+    <path d="M-22,-4 C-22,-9 22,-9 22,-4 C22,-1 -22,-1 -22,-4 Z" fill="#ea580c"/>
+    <!-- Main conical shawarma meat body -->
+    <path d="M-27,0 C-27,-3 27,-3 27,0 L18,24 C18,26 -18,26 -18,24 Z" fill="#f97316"/>
+    <!-- Slices texture -->
+    <line x1="-22" y1="6" x2="22" y2="6" stroke="#121214" stroke-width="1.8" stroke-linecap="round"/>
+    <line x1="-18" y1="12" x2="18" y2="12" stroke="#121214" stroke-width="1.8" stroke-linecap="round"/>
+    <line x1="-14" y1="18" x2="14" y2="18" stroke="#121214" stroke-width="1.8" stroke-linecap="round"/>
+    <!-- Bottom skewer tip -->
+    <polygon points="-2.5,26 2.5,26 0,33" fill="#ea580c"/>
+    <!-- Steam / aroma flourishes -->
+    <path d="M-34,3 Q-38,9 -34,16" stroke="#f97316" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <path d="M34,3 Q38,9 34,16" stroke="#f97316" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- "LAFFET" in Bold White Condensed Sans -->
+  <text x="120" y="122" text-anchor="middle" fill="#ffffff" font-family="'Cabinet Grotesk', 'Impact', sans-serif" font-weight="900" font-size="36" letter-spacing="2">LAFFET</text>
+
+  <!-- "SHAWARMA" in Warm Orange Bold Sans -->
+  <text x="120" y="153" text-anchor="middle" fill="#f97316" font-family="'Cabinet Grotesk', 'Impact', sans-serif" font-weight="900" font-size="22" letter-spacing="3.5">SHAWARMA</text>
+
+  <!-- Curved Bottom: "Delicious Syrian bite" -->
+  <path id="archPath" d="M 38,154 A 86,86 0 0,0 202,154" fill="none" />
+  <text font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#ffffff" letter-spacing="1.2">
+    <textPath href="#archPath" startOffset="50%" text-anchor="middle">Delicious Syrian bite</textPath>
+  </text>
+</svg>
