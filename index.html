@@ -19,7 +19,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Cabinet+Grotesk:wght@700;800;900&display=swap" rel="stylesheet">
   
   <!-- Styles -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=3.0">
 </head>
 <body>
 
@@ -60,7 +60,7 @@
         <a href="#om-oss" class="nav-item">Om Oss</a>
         <a href="#meny" class="nav-item">Meny</a>
         <a href="#specialiteter" class="nav-item">Favoriter</a>
-        <a href="#catering" class="nav-item">Catering & Beställ</a>
+        <a href="#catering" class="nav-item">Catering</a>
         <a href="#kontakt" class="nav-item">Hitta Hit</a>
       </nav>
 
@@ -93,7 +93,7 @@
           <a href="#om-oss" class="mobile-nav-link">Om Oss & Syriska Smaker</a>
           <a href="#meny" class="mobile-nav-link">Komplett Meny (34 rätter)</a>
           <a href="#specialiteter" class="mobile-nav-link">Favoriter & Shawarma Box</a>
-          <a href="#catering" class="mobile-nav-link">Catering & Beställningsformulär</a>
+          <a href="#catering" class="mobile-nav-link">Catering & Sällskap</a>
           <a href="#kontakt" class="mobile-nav-link">Öppettider & Karta</a>
         </nav>
         <div class="mobile-drawer-cta">
@@ -430,138 +430,65 @@
               </div>
             </div>
 
-            <div class="catering-form-wrapper">
-              <form id="cateringForm" class="catering-form">
-                <div class="form-header-badge">BESTÄLLNINGS- & CATERINGFORMULÄR</div>
-                <h3 class="form-title">Skicka din förfrågan online</h3>
-                <p class="form-subtitle">Fyll i formuläret nedan så bekräftar vi via telefon/SMS snarast!</p>
+            <div class="catering-direct-contact-card">
+              <div class="contact-card-badge">RING FÖR ATT BESTÄLLA</div>
+              <h3 class="contact-card-title">Boka Catering & Större Sällskap</h3>
+              <p class="contact-card-desc">
+                Vi tar emot alla catering- och sällskapsbeställningar personligen via telefon. Ring oss direkt så hjälper vi dig att sätta ihop den perfekta menyn för ditt sällskap!
+              </p>
 
-                <!-- Beställningstyp -->
-                <div class="form-field-group">
-                  <label class="group-label">Vad gäller förfrågan? *</label>
-                  <div class="order-type-chips">
-                    <label class="type-chip">
-                      <input type="radio" name="orderType" value="Catering / Företag" checked>
-                      <span>🍱 Catering / Företag</span>
-                    </label>
-                    <label class="type-chip">
-                      <input type="radio" name="orderType" value="Shawarma Boxar till Fest">
-                      <span>🎉 Fest / Shawarma Box</span>
-                    </label>
-                    <label class="type-chip">
-                      <input type="radio" name="orderType" value="Bordsbokning">
-                      <span>🪑 Bordsbokning</span>
-                    </label>
-                    <label class="type-chip">
-                      <input type="radio" name="orderType" value="Förbeställning Avhämtning">
-                      <span>🛍️ Förbeställning</span>
-                    </label>
+              <div class="direct-phone-boxes">
+                <a href="tel:036122420" class="direct-phone-box main-phone">
+                  <div class="phone-icon-circle">📞</div>
+                  <div class="phone-box-details">
+                    <span class="phone-box-label">Restaurang & Takeaway</span>
+                    <strong class="phone-box-number">036-12 24 20</strong>
+                    <span class="phone-box-hint">Öppet alla dagar 11:00 – 22:00</span>
+                  </div>
+                </a>
+
+                <a href="tel:0703994780" class="direct-phone-box alt-phone">
+                  <div class="phone-icon-circle">📱</div>
+                  <div class="phone-box-details">
+                    <span class="phone-box-label">Mobil & Catering</span>
+                    <strong class="phone-box-number">0703-99 47 80</strong>
+                    <span class="phone-box-hint">Direktlinje för catering, event & företag</span>
+                  </div>
+                </a>
+              </div>
+
+              <div class="catering-highlights-box">
+                <div class="highlight-item">
+                  <span class="highlight-icon">⏱️</span>
+                  <div>
+                    <strong>Förbeställ i god tid</strong>
+                    <p>Ring gärna minst 1–2 dagar i förväg vid större sällskap eller catering till företag.</p>
                   </div>
                 </div>
-
-                <!-- Kontaktuppgifter -->
-                <div class="form-field-row">
-                  <div class="form-field-group">
-                    <label for="cName">Ditt Namn *</label>
-                    <input type="text" id="cName" name="name" required autocomplete="name" placeholder="För- och efternamn">
-                  </div>
-                  <div class="form-field-group">
-                    <label for="cPhone">Telefonnummer (för bekräftelse) *</label>
-                    <input type="tel" id="cPhone" name="phone" required autocomplete="tel" placeholder="070-123 45 67">
+                <div class="highlight-item">
+                  <span class="highlight-icon">🚗</span>
+                  <div>
+                    <strong>Avhämtning eller Utkörning</strong>
+                    <p>Hämta rykande färskt på Östra Storgatan 116 A eller fråga om utkörning i Jönköping.</p>
                   </div>
                 </div>
-
-                <div class="form-field-row">
-                  <div class="form-field-group">
-                    <label for="cEmail">E-postadress</label>
-                    <input type="email" id="cEmail" name="email" autocomplete="email" placeholder="namn@foretag.se">
-                  </div>
-                  <div class="form-field-group">
-                    <label for="cCompany">Företag / Förening (valfritt)</label>
-                    <input type="text" id="cCompany" name="company" placeholder="T.ex. Företagsnamn AB">
+                <div class="highlight-item">
+                  <span class="highlight-icon">📦</span>
+                  <div>
+                    <strong>Mix Shawarma Box (10 rullar)</strong>
+                    <p>Vår populära festbox för 450 kr med pommes och hemgjord vitlökssås.</p>
                   </div>
                 </div>
+              </div>
 
-                <!-- Datum, Tid, Antal -->
-                <div class="form-field-row three-cols">
-                  <div class="form-field-group">
-                    <label for="cDate">Önskat Datum *</label>
-                    <input type="date" id="cDate" name="date" required>
-                  </div>
-                  <div class="form-field-group">
-                    <label for="cTime">Önskad Tid *</label>
-                    <input type="time" id="cTime" name="time" value="12:00" required>
-                  </div>
-                  <div class="form-field-group">
-                    <label for="cGuests">Antal Personer *</label>
-                    <select id="cGuests" name="guests" required>
-                      <option value="1-4">1 – 4 personer</option>
-                      <option value="5-9">5 – 9 personer</option>
-                      <option value="10-19" selected>10 – 19 personer</option>
-                      <option value="20-49">20 – 49 personer</option>
-                      <option value="50+">50+ personer (Större event)</option>
-                    </select>
-                  </div>
-                </div>
-
-                <!-- Leveranssätt -->
-                <div class="form-field-group">
-                  <label class="group-label">Leveranssätt *</label>
-                  <div class="delivery-options-grid">
-                    <label class="delivery-card">
-                      <input type="radio" name="deliveryMethod" value="Avhämtning på restaurangen" checked>
-                      <div class="delivery-card-inner">
-                        <strong>🛍️ Avhämtning</strong>
-                        <small>Östra Storgatan 116 A</small>
-                      </div>
-                    </label>
-                    <label class="delivery-card">
-                      <input type="radio" name="deliveryMethod" value="Önskar utkörning i Jönköping">
-                      <div class="delivery-card-inner">
-                        <strong>🚗 Utkörning</strong>
-                        <small>Jönköping med omnejd</small>
-                      </div>
-                    </label>
-                  </div>
-                </div>
-
-                <!-- Snabbval av rätter -->
-                <div class="form-field-group">
-                  <label class="group-label">Vad önskar ni beställa? (Välj gärna)</label>
-                  <div class="food-checklist">
-                    <label class="food-check-item">
-                      <input type="checkbox" name="foodOptions" value="Mix Shawarma Box (10 rullar)">
-                      <span>Mix Shawarma Box (450 kr / 10 rullar + pommes)</span>
-                    </label>
-                    <label class="food-check-item">
-                      <input type="checkbox" name="foodOptions" value="Shawarma Arabi Kyckling/Kött">
-                      <span>Shawarma Arabi (Kyckling / Nötkött)</span>
-                    </label>
-                    <label class="food-check-item">
-                      <input type="checkbox" name="foodOptions" value="Hel/Halv Broasted Kyckling">
-                      <span>Broasted Kyckling (Hel / Halv)</span>
-                    </label>
-                    <label class="food-check-item">
-                      <input type="checkbox" name="foodOptions" value="Falafel & Vegetariskt">
-                      <span>Falafel & Vegetariska rullar/tallrikar</span>
-                    </label>
-                    <label class="food-check-item">
-                      <input type="checkbox" name="foodOptions" value="Baguetter & Burgers">
-                      <span>Krispiga Baguetter (Fajita, Zinger, Philly)</span>
-                    </label>
-                  </div>
-                </div>
-
-                <div class="form-field-group">
-                  <label for="cNotes">Meddelande / Allergier / Specificering av beställning</label>
-                  <textarea id="cNotes" name="notes" rows="3" placeholder="Skriv antal av varje rätt, eventuella allergier, leveransadress om utkörning önskas..."></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-primary btn-block btn-lg form-submit-btn">
-                  <span>Skicka Beställningsförfrågan 📨</span>
-                </button>
-                <p class="form-secure-note">🔒 Ingen bindande betalning sker här – vi kontaktar dig och bekräftar detaljerna personligen.</p>
-              </form>
+              <div class="catering-cta-actions">
+                <a href="tel:036122420" class="btn btn-primary btn-block btn-lg">
+                  📞 Ring 036-12 24 20 Nu
+                </a>
+                <a href="tel:0703994780" class="btn btn-secondary btn-block">
+                  📱 Ring Mobil: 0703-99 47 80
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -780,40 +707,12 @@
     </div>
   </dialog>
 
-  <!-- Catering Success Modal -->
-  <dialog id="cateringSuccessModal" class="cart-modal">
-    <div class="cart-modal-inner">
-      <div class="cart-modal-header">
-        <div class="cart-modal-title">
-          <span class="cart-icon">🎉</span>
-          <h3>Förfrågan Mottagen!</h3>
-        </div>
-        <button type="button" class="close-modal-btn" id="closeCateringModalBtn" aria-label="Stäng bekräftelse">✕</button>
-      </div>
-      <div class="cart-modal-body">
-        <p style="font-size: 1.05rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem;" id="catModalGreeting">Tack för din förfrågan!</p>
-        <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6;" id="catModalSummary">
-          Vi har tagit emot din bokningsförfrågan och återkommer till dig via telefon eller SMS inom kort för att bekräfta meny, tid och eventuella anpassningar.
-        </p>
-        <div style="background-color: var(--bg-card-alt); border-radius: var(--radius-md); padding: 1rem; border: 1px solid var(--border-light); margin-top: 1rem;">
-          <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.35rem;">Brådskande eller vill du dubbelkolla direkt?</p>
-          <p style="font-weight: 700; color: var(--text-main);">Ring oss på <a href="tel:036122420" class="phone-link">036-12 24 20</a></p>
-        </div>
-      </div>
-      <div class="cart-modal-footer">
-        <button type="button" class="btn btn-primary btn-block" id="closeCateringModalBtn2">
-          Uppfattat, stäng
-        </button>
-      </div>
-    </div>
-  </dialog>
-
   <!-- Notification Toast -->
   <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true">
     <span id="toastMessage"></span>
   </div>
 
   <!-- Scripts -->
-  <script src="script.js"></script>
+  <script src="script.js?v=3.0"></script>
 </body>
 </html>

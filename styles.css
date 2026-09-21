@@ -1544,211 +1544,160 @@ input, select, textarea {
   color: var(--text-muted);
 }
 
-.catering-form-wrapper {
+.catering-direct-contact-card {
   background-color: #ffffff;
   border-radius: var(--radius-md);
-  padding: 2rem;
+  padding: 2.25rem 2rem;
   box-shadow: var(--shadow-md);
   border: 1px solid var(--border-light);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
 }
 
-.form-header-badge {
+.contact-card-badge {
   display: inline-block;
-  font-size: 0.72rem;
+  align-self: flex-start;
+  font-size: 0.75rem;
   font-weight: 800;
   letter-spacing: 0.1em;
   color: var(--primary);
   background: var(--primary-light);
-  padding: 0.25rem 0.65rem;
+  padding: 0.3rem 0.75rem;
   border-radius: var(--radius-full);
-  margin-bottom: 0.6rem;
 }
 
-.form-title {
+.contact-card-title {
   font-family: var(--font-heading);
-  font-size: 1.45rem;
+  font-size: 1.6rem;
   font-weight: 800;
-  margin-bottom: 0.35rem;
+  line-height: 1.2;
 }
 
-.form-subtitle {
-  font-size: 0.9rem;
+.contact-card-desc {
+  font-size: 0.95rem;
   color: var(--text-muted);
-  margin-bottom: 1.5rem;
+  line-height: 1.6;
 }
 
-.form-field-group {
-  margin-bottom: 1.15rem;
-}
-
-.group-label {
-  display: block;
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.45rem;
-}
-
-.order-type-chips {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.5rem;
-}
-@media (min-width: 640px) {
-  .order-type-chips {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-.type-chip {
-  cursor: pointer;
-}
-.type-chip input {
-  display: none;
-}
-.type-chip span {
-  display: block;
-  font-size: 0.8rem;
-  font-weight: 600;
-  text-align: center;
-  padding: 0.55rem 0.4rem;
-  border-radius: var(--radius-sm);
-  background-color: var(--bg-card-alt);
-  border: 1px solid var(--border-light);
-  color: var(--text-muted);
-  transition: all 0.2s ease;
-  user-select: none;
-}
-.type-chip input:checked + span {
-  background-color: var(--primary);
-  color: #ffffff;
-  border-color: var(--primary);
-  box-shadow: var(--shadow-sm);
-}
-
-.form-field-row {
+.direct-phone-boxes {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0.85rem;
+  gap: 1rem;
 }
 
 @media (min-width: 640px) {
-  .form-field-row {
+  .direct-phone-boxes {
     grid-template-columns: 1fr 1fr;
   }
-  .form-field-row.three-cols {
-    grid-template-columns: 1.2fr 1fr 1.2fr;
-  }
 }
 
-.delivery-options-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.75rem;
-}
-
-.delivery-card {
-  cursor: pointer;
-}
-.delivery-card input {
-  display: none;
-}
-.delivery-card-inner {
-  padding: 0.75rem 0.5rem;
-  border-radius: var(--radius-sm);
-  background-color: var(--bg-card-alt);
-  border: 1.5px solid var(--border-light);
+.direct-phone-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem;
+  border-radius: var(--radius-md);
+  border: 2px solid var(--border-light);
+  background: var(--bg-card-alt);
   transition: all 0.2s ease;
-  text-align: center;
-  user-select: none;
+  text-decoration: none;
 }
-.delivery-card-inner strong {
-  display: block;
-  font-size: 0.88rem;
+
+.direct-phone-box:hover {
+  border-color: var(--primary);
+  background: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
 }
-.delivery-card-inner small {
-  display: block;
-  font-size: 0.75rem;
+
+.direct-phone-box.main-phone {
+  border-color: var(--primary);
+  background: var(--primary-light);
+}
+
+.direct-phone-box.main-phone:hover {
+  background: #fff5eb;
+}
+
+.phone-icon-circle {
+  font-size: 1.5rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-sm);
+  flex-shrink: 0;
+}
+
+.phone-box-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.phone-box-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.phone-box-number {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--primary);
+  line-height: 1.2;
+}
+
+.phone-box-hint {
+  font-size: 0.78rem;
   color: var(--text-muted);
   margin-top: 2px;
 }
-.delivery-card input:checked + .delivery-card-inner {
-  background-color: #ffffff;
-  border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(194, 65, 12, 0.15);
-}
 
-.food-checklist {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0.45rem;
-  background-color: var(--bg-card-alt);
-  padding: 0.85rem;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--border-light);
-}
-@media (min-width: 640px) {
-  .food-checklist {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-.food-check-item {
+.catering-highlights-box {
   display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.84rem;
-  font-weight: 500;
-  cursor: pointer;
-}
-.food-check-item input[type="checkbox"] {
-  width: 16px;
-  height: 16px;
-  accent-color: var(--primary);
-  cursor: pointer;
-}
-
-.catering-form label:not(.type-chip):not(.delivery-card):not(.food-check-item) {
-  display: block;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--text-main);
-  margin-bottom: 0.35rem;
-}
-
-.catering-form input[type="text"],
-.catering-form input[type="tel"],
-.catering-form input[type="email"],
-.catering-form input[type="date"],
-.catering-form input[type="time"],
-.catering-form select,
-.catering-form textarea {
-  width: 100%;
-  padding: 0.75rem 1rem;
-  border-radius: var(--radius-sm);
+  flex-direction: column;
+  gap: 0.85rem;
+  padding: 1.15rem;
+  background: var(--bg-card-alt);
+  border-radius: var(--radius-md);
   border: 1px solid var(--border-light);
-  background-color: #ffffff;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.highlight-icon {
+  font-size: 1.25rem;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.highlight-item div strong {
+  display: block;
+  font-size: 0.9rem;
   color: var(--text-main);
-  transition: all 0.2s ease;
 }
 
-.catering-form input:focus,
-.catering-form select:focus,
-.catering-form textarea:focus {
-  outline: none;
-  border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(194, 65, 12, 0.15);
+.highlight-item div p {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-top: 1px;
 }
 
-.form-submit-btn {
-  margin-top: 1rem;
-}
-
-.form-secure-note {
-  font-size: 0.76rem;
-  color: var(--text-light);
-  text-align: center;
-  margin-top: 0.75rem;
+.catering-cta-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin-top: 0.5rem;
 }
 
 /* ==========================================================================
@@ -2491,11 +2440,14 @@ input, select, textarea {
   .catering-card {
     padding: 1.5rem 1rem;
   }
-  .catering-form-wrapper {
-    padding: 1.35rem 1rem;
+  .catering-direct-contact-card {
+    padding: 1.5rem 1.15rem;
   }
-  .form-title {
-    font-size: 1.25rem;
+  .contact-card-title {
+    font-size: 1.35rem;
+  }
+  .direct-phone-box {
+    padding: 1rem;
   }
 
   /* Contact & Map Section */
