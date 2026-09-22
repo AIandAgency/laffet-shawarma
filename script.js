@@ -661,6 +661,43 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Ensure address bar URL is clean on page load (remove any lingering hash)
+  if (window.location.hash) {
+    history.replaceState(null, '', window.location.pathname + window.location.search);
+  }
+
+  // Smooth scroll for all navigation & internal anchor links without changing URL / hash
+  const internalNavLinks = document.querySelectorAll('a[href^="#"]');
+  internalNavLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      const href = link.getAttribute('href');
+      if (!href || href === '#' || href === '#!') return;
+
+      const targetId = href.slice(1);
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        // Prevent default hash navigation to keep URL clean in address bar
+        e.preventDefault();
+
+        // Smoothly scroll to the target section
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+
+        // Ensure URL stays completely clean without #hash in address bar
+        if (window.location.hash) {
+          history.replaceState(null, '', window.location.pathname + window.location.search);
+        }
+
+        // Close mobile drawer if open
+        if (mobileDrawer && mobileDrawer.classList.contains('open')) {
+          mobileDrawer.classList.remove('open');
+          mobileDrawer.setAttribute('inert', '');
+          if (mobileBtn) mobileBtn.setAttribute('aria-expanded', 'false');
+        }
+      }
+    });
+  });
+
   // Category Scroll Arrows (Mobile & Desktop)
   const catTabsScroll = document.getElementById('catTabsScroll');
   const catScrollLeft = document.getElementById('catScrollLeft');
